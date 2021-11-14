@@ -16,9 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from E_CommerceProject import WebApp
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include(WebApp.views.urls))
+    path('', include('WebApp.urls'))
 ]
